@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag "index", "data-turbo-track": "reload" %>
+
+<div class="content">
+  <h1>Hello, <%= @stud %>!</h1>
+  <p>Це повідомлення прибуло з app/views/hi/index.html.erb</p>
+  <p><%= @message %></p>
+  <p>Час переданий з контролера: <%= @time%></p>
+  <% 5.times do |i|%>
+    <p>Моє повідомлення <%= i %> прийшло з Контролера</p>
+  <% end %>
+</div>
